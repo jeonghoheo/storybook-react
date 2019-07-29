@@ -20,7 +20,7 @@ const stories = storiesOf("Task", module);
 
 stories
   .add("기본", () => <Task task={task} {...actions} />)
-  .add("고정됨", () => (
+  .add("별표체크", () => (
     <Task task={{ ...task, state: "TASK_PINNED" }} {...actions} />
   ))
   .add("완료", () => (
